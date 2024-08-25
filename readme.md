@@ -5,7 +5,7 @@ This Application helps user to add to-do items,view items, update items and dele
 
 The procedure to setup this Application: \
 clone the repository using link
-https://github.com/appurajk/Todo-App-FastAPI.git
+https://github.com/appurajk/to-do-app.git
 
 Create python environment
     $ python -m venv venv \
