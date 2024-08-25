@@ -22,19 +22,19 @@ $ mongo
 
 Project directory has the following structure:
 
-Todo-App-FastAPI/
-│
-├── main.py
-├── models/
-│   ├── __init__.py
-│   └── todo_models.py
-├── repositories/
-│   └── todo_repository.py
-└── services/
-|    └── todo_service.py
-|___utils/
-     |__ db_connect.py
-
+Todo-App-FastAPI/<br />
+│<br />
+├── main.py<br />
+├── models/<br />
+│   ├── __init__.py<br />
+│   └── todo_models.py<br />
+├── repositories/<br />
+│   └── todo_repository.py<br />
+└── services/<br />
+|    └── todo_service.py<br />
+|___utils/<br />
+     |__ db_connect.py<br />
+<br />
 $ cd Todo-App-FastAPI \
 $ python main.py
 
