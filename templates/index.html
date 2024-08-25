@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add To-Do Item</title>
+</head>
+<body>
+    <h1>Add To-Do Item</h1>
+    <form id="todoForm">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" required><br><br>
+
+        <label for="description">Description:</label>
+        <textarea id="description" name="description"></textarea><br><br>
+
+        <label for="completed">Completed:</label>
+        <input type="checkbox" id="completed" name="completed"><br><br>
+
+        <button type="submit">Add To-Do</button>
+    </form>
+
+    <script>
+        document.getElementById('todoForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const title = document.getElementById('title').value;
+            const description = document.getElementById('description').value;
+            const completed = document.getElementById('completed').checked;
+
+            const response = await fetch('http://127.0.0.1:8000/todos/', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    title: title,
+                    description: description,
+                    completed: completed
+                })
+            });
+
+            const result = await response.json();
+            console.log(result);
+        });
+    </script>
+</body>
+</html>

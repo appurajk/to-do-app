@@ -1,0 +1,31 @@
+
+Technical Assessment Specification: Todo App
+Objective:
+Create a simple Todo application using the latest Next.js for the frontend, Firebase/Supabase for the backend, and Python FastAPI for the create operation. The application should allow users to add, view, and delete todo items.
+Requirements:
+1. Frontend: latest Next.js
+•
+Set up a Next.js project.
+Create a main page to display a list of todo items.
+•
+Add a form to add new todo items.
+•
+Include a button to delete todo items.
+Implement login functionality via Supabase/Firebase.
+2. Backend: Firebase/Supabase
+•
+Configure Firebase/Supabase to handle data storage and authentication.
+3. Create Operation: Python FastAPI
+• Set up a Python FastAPI project.
+• Create an endpoint for adding new todo items.
+Integrate this endpoint with the Next.js frontend to handle form submissions.
+Deliverables:
+•
+·
+A functional Todo app with the ability to add, view, and delete todo items.
+A GitHub repository with the complete source code.
+·
+Basic documentation on how to set up and run the project.
+Proper access control configuration.
+Time Estimate:
+This task should be achievable within 3 hours for someone familiar with the technologies involved.
